@@ -7,18 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E3B0B32297D190100923CF9 /* HotProspectsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3B0B31297D190100923CF9 /* HotProspectsApp.swift */; };
-		3E3B0B34297D190100923CF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3B0B33297D190100923CF9 /* ContentView.swift */; };
 		3E3B0B36297D190200923CF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E3B0B35297D190200923CF9 /* Assets.xcassets */; };
 		3E3B0B39297D190200923CF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E3B0B38297D190200923CF9 /* Preview Assets.xcassets */; };
+		3E3B0B46297D197B00923CF9 /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3B0B45297D197B00923CF9 /* Prospect.swift */; };
+		3E3B0B4C297D199200923CF9 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3B0B49297D199200923CF9 /* MeView.swift */; };
+		3E3B0B4D297D199200923CF9 /* HP_HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3B0B4A297D199200923CF9 /* HP_HomeView.swift */; };
+		3E3B0B4E297D199200923CF9 /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3B0B4B297D199200923CF9 /* ProspectsView.swift */; };
+		3E46D17E2984CFD7002F6D5B /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 3E46D17D2984CFD7002F6D5B /* CodeScanner */; };
+		3E46D1822984D145002F6D5B /* DetailView_HP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E46D1812984D145002F6D5B /* DetailView_HP.swift */; };
+		3E46D1852984D2B5002F6D5B /* HotProspects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E46D1842984D2B5002F6D5B /* HotProspects.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3E3B0B2E297D190100923CF9 /* HotProspects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotProspects.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E3B0B31297D190100923CF9 /* HotProspectsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotProspectsApp.swift; sourceTree = "<group>"; };
-		3E3B0B33297D190100923CF9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3E3B0B35297D190200923CF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E3B0B38297D190200923CF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3E3B0B45297D197B00923CF9 /* Prospect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
+		3E3B0B49297D199200923CF9 /* MeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		3E3B0B4A297D199200923CF9 /* HP_HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HP_HomeView.swift; sourceTree = "<group>"; };
+		3E3B0B4B297D199200923CF9 /* ProspectsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
+		3E46D1812984D145002F6D5B /* DetailView_HP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView_HP.swift; sourceTree = "<group>"; };
+		3E46D1842984D2B5002F6D5B /* HotProspects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotProspects.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E46D17E2984CFD7002F6D5B /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +45,7 @@
 		3E3B0B25297D190100923CF9 = {
 			isa = PBXGroup;
 			children = (
+				3E46D1842984D2B5002F6D5B /* HotProspects.swift */,
 				3E3B0B30297D190100923CF9 /* HotProspects */,
 				3E3B0B2F297D190100923CF9 /* Products */,
 			);
@@ -51,8 +62,9 @@
 		3E3B0B30297D190100923CF9 /* HotProspects */ = {
 			isa = PBXGroup;
 			children = (
-				3E3B0B31297D190100923CF9 /* HotProspectsApp.swift */,
-				3E3B0B33297D190100923CF9 /* ContentView.swift */,
+				3E46D1832984D1EA002F6D5B /* extentions */,
+				3E46D17F2984D0AA002F6D5B /* Model+VM */,
+				3E46D1802984D0C2002F6D5B /* Views */,
 				3E3B0B35297D190200923CF9 /* Assets.xcassets */,
 				3E3B0B37297D190200923CF9 /* Preview Content */,
 			);
@@ -65,6 +77,32 @@
 				3E3B0B38297D190200923CF9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3E46D17F2984D0AA002F6D5B /* Model+VM */ = {
+			isa = PBXGroup;
+			children = (
+				3E3B0B45297D197B00923CF9 /* Prospect.swift */,
+			);
+			path = "Model+VM";
+			sourceTree = "<group>";
+		};
+		3E46D1802984D0C2002F6D5B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3E3B0B4A297D199200923CF9 /* HP_HomeView.swift */,
+				3E3B0B49297D199200923CF9 /* MeView.swift */,
+				3E3B0B4B297D199200923CF9 /* ProspectsView.swift */,
+				3E46D1812984D145002F6D5B /* DetailView_HP.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3E46D1832984D1EA002F6D5B /* extentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +121,9 @@
 			dependencies = (
 			);
 			name = HotProspects;
+			packageProductDependencies = (
+				3E46D17D2984CFD7002F6D5B /* CodeScanner */,
+			);
 			productName = HotProspects;
 			productReference = 3E3B0B2E297D190100923CF9 /* HotProspects.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +152,9 @@
 				Base,
 			);
 			mainGroup = 3E3B0B25297D190100923CF9;
+			packageReferences = (
+				3E46D17C2984CFD7002F6D5B /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = 3E3B0B2F297D190100923CF9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E3B0B34297D190100923CF9 /* ContentView.swift in Sources */,
-				3E3B0B32297D190100923CF9 /* HotProspectsApp.swift in Sources */,
+				3E3B0B4D297D199200923CF9 /* HP_HomeView.swift in Sources */,
+				3E46D1852984D2B5002F6D5B /* HotProspects.swift in Sources */,
+				3E3B0B46297D197B00923CF9 /* Prospect.swift in Sources */,
+				3E46D1822984D145002F6D5B /* DetailView_HP.swift in Sources */,
+				3E3B0B4E297D199200923CF9 /* ProspectsView.swift in Sources */,
+				3E3B0B4C297D199200923CF9 /* MeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +387,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3E46D17C2984CFD7002F6D5B /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3E46D17D2984CFD7002F6D5B /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E46D17C2984CFD7002F6D5B /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3E3B0B26297D190100923CF9 /* Project object */;
 }
