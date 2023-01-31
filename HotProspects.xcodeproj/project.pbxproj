@@ -62,7 +62,6 @@
 		3E3B0B30297D190100923CF9 /* HotProspects */ = {
 			isa = PBXGroup;
 			children = (
-				3E46D1832984D1EA002F6D5B /* extentions */,
 				3E46D17F2984D0AA002F6D5B /* Model+VM */,
 				3E46D1802984D0C2002F6D5B /* Views */,
 				3E3B0B35297D190200923CF9 /* Assets.xcassets */,
@@ -96,13 +95,6 @@
 				3E46D1812984D145002F6D5B /* DetailView_HP.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		3E46D1832984D1EA002F6D5B /* extentions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +310,7 @@
 				DEVELOPMENT_TEAM = 78B5GQU47L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "we want to save your pictures";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -347,6 +340,7 @@
 				DEVELOPMENT_TEAM = 78B5GQU47L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "we want to save your pictures";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

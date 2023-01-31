@@ -90,7 +90,8 @@ struct ProspectsView: View {
                     }
                 }
                 .onDelete(perform: prospects.deleteProspect)
-//                .onDelete { ofset in
+//this does not work, i don't know what happened to the index of each prospect after sorting.
+//                    .onDelete { ofset in
 //                    for i in ofset {
 //                        guard let found = filteredProspects.firstIndex(where: { $0.id == filteredProspects[i].id }) else { return }
 //                        let index: IndexSet = IndexSet(integer: found)
@@ -137,7 +138,7 @@ struct ProspectsView: View {
         }
     }
     
-    //filtering on the title.
+    //MARK: filtering on the title.
     var title: String {
         switch filterType {
         case .none:
@@ -153,7 +154,7 @@ struct ProspectsView: View {
         }
     }
     
-    //filtering on the pepple
+    // MARK: filtering on the pepple.
     var filteredProspects: [Prospect] {
         switch filterType {
         case .none:
@@ -168,11 +169,13 @@ struct ProspectsView: View {
             return prospects.people.reversed()
         }
     }
-    // how does SwiftUI know to refresh the view when the property changed?. It does not know.
+    
+    //MARK: how does SwiftUI know to refresh the view when the property changed?. It does not know.
     /*
      When we added an @EnvironmentObject property to ProspectsView, we also asked SwiftUI to reinvoke the body property whenever that property changes. So, whenever we insert a new person into the people array its @Published property wrapper will announce the update to all views that are watching it, and SwiftUI will reinvoke the body property of ProspectsView. That in turn will calculate our computed property again, so the List will change
      */
     
+    //MARK: It either return success or failure.
     func handleScan(result: Result<ScanResult, ScanError>) {
         isShowingScanView = false
         
